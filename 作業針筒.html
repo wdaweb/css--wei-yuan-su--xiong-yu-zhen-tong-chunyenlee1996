@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .bg{
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #000;
+        }
+        .bg::before{
+            content:'';
+            width: 295px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 48.5%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            background-image: linear-gradient(rgba(220, 220, 220, 0) 20%,rgba(105, 105, 105, 0.268),rgba(220, 220, 220, 0));
+        }
+        .mainbox{
+            width: 240px;
+            height: 50px;
+            background-image: linear-gradient(90deg, rgb(216, 216, 216) 45%, black 45%,black 55%, yellow 55%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: .5px solid #000;
+            font-size: 0;
+        }
+        .smailLine{
+            width: 8px;
+            height: 8px;
+            border-right: 1px solid #000;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .mainbox p{
+            color: rgb(117, 120, 124);
+            position: absolute;
+            left: 0;
+            bottom:0;
+            font-size: 1px;
+            margin: 0;
+        }
+        .normalSizeBox{
+            width: 20px;
+            height: 35px;
+            border-radius:0 2px 2px 0 ;
+            position: absolute;
+            top: 50%;
+            right: 22%;
+            transform: translateY(-50%);
+            border: 1px solid #000;
+
+        }
+        .normalSizeBox::before{
+            content:"";
+            display: block;
+            width: 40px;
+            height: 1px;
+            border:1px solid #000;
+            position: absolute;
+            top: 50%;
+            right: -200%;
+            transform: translateY(-50%);
+            box-sizing: border-box;
+        }
+        .normalSizeBox2{
+            width: 20px;
+            height: 35px;
+            position: absolute;
+            top: 50%;
+            left: 22%;
+            transform: translateY(-50%);
+            border: 1px solid #000;
+
+        }
+        .normalSizeBox2::before{
+            content:"";
+            width: 15px;
+            height: 45px;
+            position: absolute;
+            border-radius: 3px;
+            border: 1px solid #000;
+            top: 0;
+            left: -85%;
+            transform: translateY(-12%);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="normalSizeBox"></div>
+        <div class="normalSizeBox2"></div>
+        <div class="mainbox">
+            <p>Made in Taiwan</p>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+            <div class="smailLine"></div>
+        </div>
+    </div>
+</body>
+</html>
